@@ -1,5 +1,4 @@
-import type { Options } from '@wdio/types'
-export const config: Options.Testrunner = {
+export const config: WebdriverIO.Config = {
     //
     // ====================
     // Runner Configuration
@@ -53,7 +52,8 @@ export const config: Options.Testrunner = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        browserVersion: '121.0.6167.85',
     }],
 
     //

@@ -8,7 +8,7 @@ describe('Google Search', () => {
 
   before(async () => {
     browser = await remote({
-      capabilities: { browserName: 'chrome' }
+      capabilities: { browserName: 'chrome', browserVersion: '121.0.6167.85' }
     });
   });
 
